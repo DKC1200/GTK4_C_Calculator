@@ -1,6 +1,6 @@
 # GTK Calculator
 
-A lightweight, modern calculator application built with GTK4 and C.
+A lightweight, modern calculator application built with GTK4 and C. Available in Linux and Windows
 
 ![Calculator Screenshot](screenshot.png)
 <img width="352" height="499" alt="Calculator" src="https://github.com/user-attachments/assets/513b561c-4f9b-4c3e-b42d-3a86671120cb" />
@@ -12,10 +12,11 @@ A lightweight, modern calculator application built with GTK4 and C.
 - ⌨️ Keyboard support (press Enter to calculate)
 - 🐧 Native Linux application with GTK4
 - 📦 Available as Flatpak
+- 🪟 Available for windows
 
 ## Installation
 
-### Linux (Flatpak - Recommended)
+### Linux (Flatpak)
 ```bash
 # Install the Flatpak bundle
 flatpak install calculator.flatpak
@@ -24,20 +25,9 @@ flatpak install calculator.flatpak
 flatpak run com.debora.Calculator
 ```
 
-### Windows (MSYS2)
+### Windows
 
-1. Install [MSYS2](https://www.msys2.org/)
-2. Open MSYS2 MinGW 64-bit terminal
-3. Install dependencies:
-```bash
-pacman -S mingw-w64-x86_64-gtk4 mingw-w64-x86_64-gcc mingw-w64-x86_64-meson mingw-w64-x86_64-ninja
-```
-4. Build:
-```bash
-meson setup build
-meson compile -C build
-./build/calculator.exe
-```
+- Download windows app folder and open calculator.exe
 
 ## Usage
 
@@ -87,26 +77,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - [ ] Themes/dark mode
 - [ ] Scientific calculator mode
 - [ ] Windows installer
-
-### Build directories
-build/
-build-dir/
-repo/
-
-### Meson files
-.ninja_deps
-.ninja_log
-
-### Compiled files
-*.o
-*.exe
-calculator
-
-### Flatpak
-*.flatpak
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*~
