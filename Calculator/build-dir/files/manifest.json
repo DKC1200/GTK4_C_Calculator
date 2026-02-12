@@ -1,0 +1,27 @@
+{
+  "id" : "com.debora.Calculator",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "46",
+  "runtime-commit" : "1adbb849eea4915c4ca9b5a7718d26a881d7f67f469a11822b52605933bcbe70",
+  "sdk" : "org.gnome.Sdk",
+  "sdk-commit" : "aa0461bd06103dd53177ff48cf1b0ece18e094cbc8d67c424545577e7d359cba",
+  "command" : "calculator",
+  "modules" : [
+    {
+      "name" : "calculator",
+      "buildsystem" : "meson",
+      "sources" : [
+        {
+          "path" : ".",
+          "type" : "dir"
+        }
+      ]
+    }
+  ],
+  "finish-args" : [
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=ipc"
+  ],
+  "source-date-epoch" : 1770859637
+}

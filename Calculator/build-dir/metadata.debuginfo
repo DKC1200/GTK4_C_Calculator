@@ -1,0 +1,5 @@
+[Runtime]
+name=com.debora.Calculator.Debug
+
+[ExtensionOf]
+ref=app/com.debora.Calculator/x86_64/master

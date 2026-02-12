@@ -1,0 +1,16 @@
+app-id: com.debora.Calculator
+runtime: org.gnome.Platform
+runtime-version: "46"
+sdk: org.gnome.Sdk
+command: calculator
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --share=ipc
+
+modules:
+  - name: calculator
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .
